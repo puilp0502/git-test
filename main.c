@@ -3,6 +3,9 @@ int add(int a, int b){
 	return a+b;
 }
 
+int sub(int a, int b){
+	return a-b;
+}
 int main(){
 	int input;
 	int a;
@@ -14,6 +17,11 @@ int main(){
 			printf("Input value a and b:");
 			scanf("%d %d", &a, &b);
 			printf("%d\n", add(a,b));
+			break;
+		case 2:
+			printf("Input value a and b:");
+			scanf("%d %d", &a, &b);
+			printf("%d\n", sub(a,b));
 			break;
 		default:
 			printf("Option not correct\n");
